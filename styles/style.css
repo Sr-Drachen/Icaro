@@ -1,0 +1,230 @@
+.body{
+  width: 1080px;
+}
+.space{
+  justify-content: center;
+  display: grid;
+}
+.gif{
+  margin-top: 18em;
+  width: 600px;
+}
+.circular-button {
+  font-family: Century Gothic;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1A1A1A;
+  color: white;
+  font-size: 62px;
+  font-weight: 400;
+  margin-top: 3em;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.circular-button::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #423f3f; 
+  box-sizing: border-box;
+}
+.button-arrows{
+  position: absolute;
+  bottom: 434px;
+  width: 120px;
+  height: 250px;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 1));
+  border-radius: 65px 65px 65px 65px;
+  border: none;
+  box-sizing: border-box;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Ajusta la distancia que suben */
+  }
+}
+
+.arrow-up1, .arrow-up2, .arrow-up3 {
+  position: absolute;
+  width: 50px !important;
+  bottom: 21%;
+  animation: float 2s ease-in-out infinite; /* 2s es la duración de la animación */
+}
+
+.arrow-up2 {
+  bottom: 22%;
+}
+
+.arrow-up3 {
+  bottom: 23%;
+}
+
+
+/* 
+.circular-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+} */
+
+.web-content {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background-color: #dce0e3;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.stard{
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+.stard img{
+  width: 331px;
+  height: 319px;
+}
+.logo-icaro{
+  margin-top: -47px;
+
+}
+.title2{
+  font-family: Century Gothic;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 0;
+}
+.title3{
+  margin-top: 3em;
+  display: grid;
+  margin-bottom: -5px;
+  gap: 0;
+  font-family: Century Gothic;
+  font-weight: 700;
+  font-size: 48px;
+  color: #00000080;
+}
+.title4{
+  margin: 0;
+  font-family: Century Gothic;
+  font-weight: 700;
+  font-size: 64px;
+  color: #EA0029;
+}
+.qr {
+  position: absolute;
+  bottom: 10px;
+  width: 206px !important; 
+  right: 1em;
+
+}
+.icons-main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  column-gap: 60px;
+}
+.icons-main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 51%;
+  width: 6px;
+  border-radius: 20px;
+  margin-top: 61px;
+  height: 187px;
+  background-color: rgba(206, 0, 0, 0.2);
+}
+.stard img, .stard h1{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  opacity: 1; 
+}
+#web-content {
+  display: none;
+  opacity: 0; 
+  transition: opacity 0.5s ease;
+}
+
+
+.slider {
+  width: 75vh;
+  margin: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 10s linear infinite; 
+  -webkit-animation: scroll 10s linear infinite; 
+  width: calc(4480px * 2); 
+}
+
+.slider .slide {
+  width: 4480px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-4480px * 1));
+    transform: translateX(calc(-4480px * 1));
+  }
+}
+
+
+.buttons-main{
+  display: grid;
+  justify-content: center;
+}
+
+.button-main{
+  font-family: Century Gothic;
+  border: none;
+  border-radius: 20px;
+  margin-top: 15px;
+  width: 586px;
+  height: 192px;
+  font-weight: 800;
+  box-shadow: #2c2f33;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.arrow-container{
+  width: 35px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  height: 34px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 5px 4px 6px rgba(0, 0, 0, 0.16);
+  top: 13%;
+}
+.arrow-main{
+  position: relative;
+  top: 14%;
+}
