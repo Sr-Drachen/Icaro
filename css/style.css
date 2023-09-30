@@ -124,12 +124,11 @@
   font-size: 64px;
   color: #EA0029;
 }
-.qr {
+.scaner {
   position: absolute;
   bottom: 10px;
   width: 206px !important; 
   right: 1em;
-
 }
 .icons-main{
   display: flex;
