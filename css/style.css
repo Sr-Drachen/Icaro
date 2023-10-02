@@ -392,11 +392,18 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .text-vidmedios{
-  width: 1000px;
-  font-size: 66px;
-  text-align: center;
+  background-color: rgba(205, 203, 210, 1);
+  font-family: Century Schoolbook;
+  width: 967px;
+  font-size: 40px;
+  padding-top: 100px;
+  padding-left: 50px;
 }
-
+.text-vidmerch{
+  margin-right: 50px;
+  margin-left: -23px;
+  height: 430px;
+}
 .merch-container{
   display: flex;
   scroll-snap-align: start;
@@ -417,6 +424,7 @@ h1,h2,h3,h4,h5,h6,p{
   left: 9%;
 }
 .title-features{
+  font-family: Century Schoolbook;
   margin-top: 2.5em;
   margin-left: 3em;
   font-size: 46px;
