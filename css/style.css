@@ -1,4 +1,6 @@
 body{
+  max-width: 1080px;
+  max-height: 1920px;
   font-family: Century Gothic;
   color: #1A1A1A;
   margin: 0;
@@ -66,7 +68,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .button-arrows{
   position: absolute;
-  bottom: 434px;
+  bottom: 368px;
   width: 120px;
   height: 250px;
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 1));
@@ -87,16 +89,16 @@ h1,h2,h3,h4,h5,h6,p{
 .arrow-up1, .arrow-up2, .arrow-up3 {
   position: absolute;
   width: 50px !important;
-  bottom: 21%;
+  bottom: 18%;
   animation: float 2s ease-in-out infinite; /* 2s es la duración de la animación */
 }
 
 .arrow-up2 {
-  bottom: 22%;
+  bottom: 19%;
 }
 
 .arrow-up3 {
-  bottom: 23%;
+  bottom: 20%;
 }
 
 
@@ -257,7 +259,7 @@ h1,h2,h3,h4,h5,h6,p{
   flex-wrap: wrap;
   gap: 48px;
   justify-content: center;
-  margin-top: 9em;
+  margin-top: 5em;
 }
 
 .button-main {
@@ -265,6 +267,7 @@ h1,h2,h3,h4,h5,h6,p{
   font-size: 44px;
   font-weight: 700;
   border: none;
+  cursor: pointer;
   border-radius: 20px;
   margin-top: 15px;
   width: 622px;
@@ -272,6 +275,14 @@ h1,h2,h3,h4,h5,h6,p{
   background: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   position: relative;
+}
+.button-main:hover{
+  color: #ffffff;
+  background-color: #EA0029;
+}
+.button-main:active{
+  color: #ffffff;
+  background-color: #EA0029;
 }
 
 .arrow-container {
@@ -348,4 +359,71 @@ h1,h2,h3,h4,h5,h6,p{
 
 .footer-contact-list{
   font-weight: 300;
+}
+
+.container-term {
+  display: flex;
+  margin-top: 2em;
+  margin-left: 3em;
+  gap: 36px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+.video-container {
+  flex: 0 0 700px;
+  scroll-snap-align: start;
+  height: auto; 
+  transition: transform 1s ease;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.desing-container {
+  display: flex;
+  scroll-snap-align: start;
+  transition: transform 1s ease;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+
+.text-vidmedios{
+  width: 1000px;
+  font-size: 66px;
+  text-align: center;
+}
+
+.merch-container{
+  display: flex;
+  scroll-snap-align: start;
+  transition: transform 1s ease;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.title {
+  margin-left: 4em;
+  display: flex; 
+  align-items: center;
+}
+
+.arrow-title-container {
+  transform: scaleX(-1);
+  position: absolute;
+  top: 15%;
+  left: 9%;
+}
+.title-features{
+  margin-top: 2.5em;
+  margin-left: 3em;
+  font-size: 46px;
+  color: rgba(156, 155, 160, 1);
+}
+.img-fixed{
+  position: absolute;
+  bottom: 19%;
+  left: -2em;
 }
