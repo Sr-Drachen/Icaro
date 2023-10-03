@@ -1,6 +1,4 @@
 body{
-  max-width: 1080px;
-  max-height: 1920px;
   font-family: Century Gothic;
   color: #1A1A1A;
   margin: 0;
@@ -161,7 +159,7 @@ h1,h2,h3,h4,h5,h6,p{
 .icons-main{
   display: flex;
   flex-direction: row;
-  margin-top: 90px;
+  margin-top: 76.8%;
   column-gap: 60px;
 }
 .icons-main::before {
@@ -434,4 +432,11 @@ h1,h2,h3,h4,h5,h6,p{
   position: absolute;
   bottom: 19%;
   left: -2em;
+}
+
+.back-video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
