@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
         webContent.style.opacity = "1"; // Establece la opacidad en 1 para hacerlo visible
       }, 200);
       isOn = true;
-    } else {
       // Si está encendido, apaga y oculta el contenido
       mostrarWebButton.style.transform = "translateY(0)";
       stardContainer.style.display = "none";
