@@ -430,8 +430,11 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .img-fixed{
   position: absolute;
-  bottom: 19%;
+  bottom: 17%;
   left: -2em;
+}
+.img-fixed-desing{
+  bottom: 16%;
 }
 
 .back-video{
