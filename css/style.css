@@ -65,8 +65,8 @@ h1,h2,h3,h4,h5,h6,p{
   box-sizing: border-box;
 }
 .button-arrows{
-  position: absolute;
-  bottom: 268px;
+  position: relative;
+  bottom: 259px;
   width: 120px;
   height: 250px;
   background: linear-gradient(rgba(255, 255, 255, 1), rgba(0, 0, 0, 1));
@@ -151,10 +151,10 @@ h1,h2,h3,h4,h5,h6,p{
   color: #EA0029;
 }
 .scaner {
-  position: absolute;
-  bottom: 10px;
-  width: 206px !important; 
-  right: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 206px !important;
+  right: 20px;
 }
 .icons-main{
   display: flex;
@@ -437,9 +437,10 @@ h1,h2,h3,h4,h5,h6,p{
   bottom: 16%;
 }
 
-.back-video{
+.back-video {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
